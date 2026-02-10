@@ -12,7 +12,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(k=0; k<(n-1); k++){
-    for(j=0; j<n; j++){
+    for(j=0; j<(n-1-k); j++){
         if(arr[j]> arr[j+1]){
             int temp = arr[j];
             arr[j] = arr[j+1];
@@ -21,8 +21,9 @@ int main(){
     }
 }
 
-printf("The output is ");
+printf("The output is \n");
+printf("Sorted Array :");
     for(i=0; i<n; i++){
-        printf("The %dth element of array :%d\n",i,arr[i]);
+        printf("%d  ",arr[i]);
     }
 }
